@@ -1,0 +1,41 @@
+# ============================================================
+# Archivo: Ejercicio2Proyecto.py
+# Curso: SOFT-01 Principios de Programación 1 - Sección SCV6
+# Integrantes: Sofía Cabas, Maria Fernanda Loria y Roberto Alonso Ulate 
+# Fecha: 12/10/2026 Versión: 1.0
+# Descripción: Verificación de combustible
+# ============================================================
+
+# Entrada de datos 
+
+combustible_disponible = int(input("Ingrese la cantidad de combustible disponible: "))
+combustible_requerida_viaje_ida = int(input("Ingrese la cantidad requerida de combustible para el viaje de ida: "))
+combustible_requerida_viaje_regreso = int(input("Ingrese la cantidad requerida de combustible para el viaje de regreso: "))
+
+# Declaración de la constante reserva.
+
+# Toda misión debe transportar 10 unidades adicionales de combustible para emergencias.
+
+RESERVA_COMBUSTIBLE = 10
+
+# Procesamientos:
+
+#El combustible total requerido para completar la misión incluye el viaje de ida, el viaje de regreso y una reserva de emergencia de 10 unidades.
+
+combustible_total = combustible_requerida_viaje_ida + combustible_requerida_viaje_regreso + RESERVA_COMBUSTIBLE
+combustible_adicional = combustible_disponible - combustible_total
+
+# Condición:
+
+# Si el combustible adicional es menor a 10, eneseñar una advertencia de que el margen adicional es bajo pero si no es bajo no se va a mostrar la advertencia
+
+if combustible_adicional < 10:
+    print("Advertencia: el margen adicional de combustible es bajo, ya que es de:", combustible_adicional, "unidades")
+
+else:
+    print("El margen de combustible adicional es de:", combustible_adicional, "unidades")
+
+# Salidas de resultados
+
+print("Combustible total requerido:", combustible_total, "unidades")
+print("Reserva de combustible:", RESERVA_COMBUSTIBLE, "unidades")

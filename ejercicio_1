@@ -1,0 +1,50 @@
+# ============================================================
+# Archivo: Ejercicio1Proyecto.py
+# Curso: SOFT-01 Principios de Programación 1 - Sección SCV6
+# Integrantes: Sofía Cabas, Maria Fernanda Loria y Roberto Alonso Ulate 
+# Fecha: 10/10/2026 Versión: 1.0
+# Descripción: Cálculo los recursos necesarios para una misión.
+# ============================================================
+
+# Entrada de datos
+
+nombre_mision = input("Ingrese el nombre de la misión: ")
+cantidad_tripulantes = int(input("Ingrese la cantidad de tripulantes: "))
+cantidad_dias_de_viaje = int(input("Ingrese cantidad de días estimados para llegar al destino: "))
+
+# Declaración de la constante reserva.
+
+# Toda misión debe transportar 10 unidades adicionales de combustible para emergencias.
+
+RESERVA_COMBUSTIBLE = 10
+
+# Procesameintos:
+
+# Por cada día durane el viaje de ida y regreso (ya que duran lo mismo) se consumen 8 unidades de combustible.
+
+combustible_ida = cantidad_dias_de_viaje * 8
+combustible_regreso = cantidad_dias_de_viaje * 8
+combustible_total = combustible_ida + combustible_regreso + RESERVA_COMBUSTIBLE
+
+# Cada tripulante consume 2 unidades de oxígeno por día durante el viaje de ida y regreso. Además, se agregan 5 unidades de emergencia.
+
+oxigeno_requerido =  cantidad_dias_de_viaje * 2 * 2 * cantidad_tripulantes + 5
+
+# La nave consume 5 unidades de energía por día durante el viaje de ida y regreso. Además, de 10 unidades para las operaciones de exploración.
+
+energia_requerida =  cantidad_dias_de_viaje * 5 * 2 + 10
+
+# cada tripulante consume 1 unidad de provisiones por día durante el viaje de ida y regreso. Además, se agregan 3 unidades adicionales.
+
+provisiones_requeridas = cantidad_dias_de_viaje * cantidad_tripulantes * 2 + 3
+
+# Salida de resultados
+
+print("Combustible de ida:", combustible_ida, "unidades")
+print("Combustible de regreso:", combustible_regreso, "unidades")
+print("Combustible total requerido:", combustible_total, "unidades")
+print("Combustible de reserva:", RESERVA_COMBUSTIBLE, "unidades")
+
+print("Oxígeno requerido:", oxigeno_requerido, "unidades")
+print("Energía requerida:", energia_requerida, "unidades")
+print("Provisiones requeridas:", provisiones_requeridas, "unidades")
