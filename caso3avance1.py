@@ -1,7 +1,11 @@
-"""
-Ejercicio numero 3
-Descripción: Verifica si la nave cuenta con suficientes recursos de oxígeno y provisiones para la tripulación.
-"""
+# ============================================================ 
+# Archivo: caso3avance1.py 
+# Curso: SOFT-01 Principios de Programación 1 - Sección SCV6 
+# Integrantes: Sofia Cabas 1, Maria Loria 2, Roberto Ulate 3
+# Fecha: 13/10/2026    
+# Ejercicio: #3    
+# Descripción: Verifica si la nave cuenta con suficientes recursos de oxígeno y provisiones para la tripulación. 
+# ============================================================ 
 
 
 # Datos de Entrada
@@ -19,5 +23,5 @@ else:
     resultado = "La nave no posee recursos suficientes para la tripulación."
 
 
-# Salida
+# Datos de Salida
 print(resultado)
