@@ -100,3 +100,31 @@ reserva establecida.
 • Si se cumple la condición: “Lanzamiento autorizado.” 
 • En caso contrario: “Lanzamiento no autorizado. La misión debe ser revisada.” 
 En este ejercicio todavía no deberá indicarse cuál recurso provocó el rechazo.
+
+## Ejercicio 5: Selección del destino y autorización de la misión 
+En el primer avance la duración del viaje era un dato de entrada. En este ejercicio el usuario 
+selecciona un destino y el programa determina automáticamente la duración del viaje de ida 
+mediante una condicional múltiple. Luego, mediante una condicional anidada, decide si la 
+misión puede autorizarse con los recursos disponibles. 
+Datos solicitados: 
+• Nombre de la misión. 
+• Cantidad de tripulantes. 
+• Opción de destino. 
+• Combustible disponible. 
+• Oxígeno disponible. 
+• Energía disponible. 
+• Provisiones disponibles. 
+Los cuatro recursos disponibles se solicitan únicamente si la opción de destino es válida. 
+
+## Ejercicio 6: Simulación del viaje hacia el destino 
+El programa debe utilizar un ciclo para representar el paso de los días. Cada iteración 
+equivale a un día de viaje y modifica el estado de los recursos. La condición del ciclo debe 
+considerar tanto los días pendientes como la posibilidad de continuar la misión (por ejemplo, 
+mediante una variable booleana).
+Datos solicitados: 
+• Cantidad de días del viaje. 
+• Cantidad de tripulantes. 
+• Combustible disponible. 
+• Oxígeno disponible. 
+• Energía disponible. 
+• Provisiones disponibles. 
